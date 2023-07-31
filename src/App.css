@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap');
 .home-mobile, html {
-  background-color: #d7d7d7;
+  background-color: #F6F6F6;
   height: 400vh;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   width: 100%;
 }
+
+.header-mobile {display: none;}
 
 .header {
   align-items: center;
@@ -15,8 +16,34 @@
   justify-content: space-between;
   left: 0;
   padding: 19px 36px 19px 20px;
-  top: 0;
+  position:inherit;
+  height: 100%;
 }
+
+.nav-button {
+  color: #3A9B8D;
+  margin-top: 0;
+  font-family: "Poppins", Helvetica;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 1rem;
+  border: none;
+  background-color: transparent;
+}
+.nav-button:hover {
+  color: #15554b;
+  margin-top: 0;
+  font-family: "Poppins", Helvetica;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 1rem;
+  border: none;
+  background-color: #efefef;
+  border-radius: 10;
+}
+
 
 .logo {
   height: 77px;
@@ -36,19 +63,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
   padding: 2rem 0;
+  height: 90%;
 }
 
 .two {
-  
-  background-color: #ebebeb53;
+  background-color: #323232;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   padding: 2rem 0;
+  height: 100%;
+  width: 100%;
 }
 
 .three {
@@ -57,36 +85,57 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 100vh;
   padding: 3rem 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.KeyboxSystem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  padding: 20%;
+
 }
 
 .four {
   align-items: center;
-  background-color: #e4e4e4;
+  background-color: #323232;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 2rem 0;
-  position: relative;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 .render {
-  width: 270px;
   margin: 1rem;
-  
+}
+
+.renders {
+ display: flex;
+ justify-content: center;
+ 
+
+}
+@media screen and (max-width: 550px){
+  .renders {flex-direction: column;}
+  #three {display: none;}
+  .header-desktop {display: none;}
+  .header-mobile {display:contents}
 }
 
 h1 {
-  -webkit-background-clip: text !important;
-  background: linear-gradient(180deg, rgb(66.84, 66.84, 148.54) 0%, rgb(57, 141, 132) 100%);
-  background-clip: text;
-  color: transparent;
-  font-family: "Poppins", Helvetica;
-  font-size: 2.5rem;
-  font-weight: 700;
+  color: #3A9B8D;
   text-align: center;
+  text-shadow: -1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Poppins;
+  font-size: 3rem;
+  font-weight: 700;
   margin-bottom: 0;
 }
 
@@ -94,24 +143,44 @@ p {
   color: #000000;
   margin-top: 0;
   font-family: "Poppins", Helvetica;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 300;
   text-align: center;
   margin: 1rem;
 }
 
 .button {
-  background: linear-gradient(180deg, rgb(58, 155, 141) 0%, rgb(66.84, 66.84, 148.54) 100%);
+  background: linear-gradient(335deg, #EDD500 0%, #FE8900 100%);
+  box-shadow: -3px 4px 7px 0px rgba(0, 0, 0, 0.20);
   border-radius: 4px;
   color: #000000;
   font-family: "Poppins", Helvetica;
   font-size: 1rem;
   font-weight: 400;
   border: none;
-  padding: 0.5rem;
-  width: 50%;
+  padding: 1rem 2rem;
   align-items: center;
   margin: 1rem;
+  color: #FFF;
+  text-align: center;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: linear-gradient(335deg, #ffb300 0%, rgb(255, 68, 0) 100%);
+  box-shadow: -3px 4px 7px 0px rgba(0, 0, 0, 0.20);
+  border-radius: 4px;
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  padding: 1rem 2rem;
+  align-items: center;
+  margin: 1rem;
+  color: #FFF;
+  text-align: center;
+  font-weight: 600;
 }
 
 .submit {
@@ -132,34 +201,31 @@ p {
 
 .teksty {
   align-items: center;
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
   gap: 1rem;
   justify-content: center;
   padding: 2rem;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  max-width: 1000px;
 }
 
 .frame-2 {
   align-items: center;
   align-self: stretch;
-  background-color: #79797921;
-  border-color: transparent;
-  border-image: linear-gradient(to bottom, rgb(58, 155, 141), rgb(60.43, 60.43, 128.35)) 1;
-  border-left-style: solid;
-  border-left-width: 7px;
+  border-radius: 0.75rem;
+  background: #328478;
   display: flex;
-  flex: 0 0 auto;
-  gap: 10px;
+  width: 15rem;
+  height: 15rem;
+  gap: 5rem;
   justify-content: center;
-  margin-left: -7px;
-  margin-right: -7px;
   padding: 6px 10px;
-  position: relative;
 
 }
 
 .text-wrapper-2 {
-  color: #000000;
+  color: #FFFF;
   flex: 1;
   font-family: "Poppins", Helvetica;
   font-size: 20px;
@@ -171,10 +237,9 @@ p {
 }
 
 .h2 {
-  -webkit-background-clip: text !important;
-  background: linear-gradient(180deg, rgb(57, 141, 132) 0%, rgb(66.84, 66.84, 148.54) 100%);
-  background-clip: text;
-  color: transparent;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   font-family: "Poppins", Helvetica;
   font-size: 20px;
   font-weight: 700;
@@ -184,6 +249,7 @@ p {
 h3 {
   font-family: "Poppins";
   font-size: 1.5rem;
+  color: #FFF;
 }
 
 
@@ -211,10 +277,14 @@ h3 {
 .footer {
   align-items: center;
   flex-direction: column;
-  background-color: #d7d7d7;
+  background-color: #1F1F1F;
   gap: 10px;
   left: 37px;
   bottom:0;
+  color: #FFF;
+  font-family: "Poppins";
+  text-align: center;
+  padding: 1rem;
 }
 
 form {
@@ -248,14 +318,24 @@ label {
   padding: 12px 12px 12px 0;
   display: inline-block;
   font-family: 'Poppins';
+  color: #FFF;
 }
 
+.h3 {
+  color: #3A9B8D;
+  font-size: 2rem; 
+  font-family: 'Poppins'; 
+  font-weight: '700'; 
+  font-weight: 700;
+  text-align: center;
+}
 .text2 {
   color: 'black';
-  font-size: 15; 
+  font-size: 1.5rem; 
   font-family: 'Poppins'; 
   font-weight: '700'; 
   word-wrap: 'break-word';
+  text-align: center;
 }
 
 table {
