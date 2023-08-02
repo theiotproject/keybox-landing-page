@@ -358,7 +358,7 @@ tr:nth-child(even) {
 .contact{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:space-evenly;
   width: 80%;
   gap: 2rem;
   margin-top: 5rem;
