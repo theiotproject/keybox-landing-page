@@ -114,13 +114,13 @@
 
 .render {
   margin: 1rem;
+  max-width: 100%;
+  height: auto;
 }
 
 .renders {
  display: flex;
  justify-content: center;
- 
-
 }
 
 h1 {
@@ -186,7 +186,7 @@ p {
 }
 
 .main-text {
-
+  padding: 2rem;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -383,6 +383,6 @@ td, th {
   .header-desktop {display: none;}
   .header-mobile {display: contents}
   .text2 { text-align: left; }
-  .h3 { text-align: left; }
+  .h3 { text-align: left; width: 100%; }
   .contact {flex-direction: column;}
 }
