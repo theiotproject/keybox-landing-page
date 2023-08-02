@@ -9,6 +9,8 @@
 
 .header-mobile {display: none;}
 
+.header-desktop {position: flex;}
+
 .header {
   align-items: center;
   background-color: transparent;
@@ -17,7 +19,6 @@
   left: 0;
   padding: 19px 36px 19px 20px;
   position:inherit;
-  height: 100%;
 }
 
 .nav-button {
@@ -96,8 +97,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50%;
-  padding: 20%;
+  height: 70%;
+  padding: 10%;
+  width: 90%;
 
 }
 
@@ -121,12 +123,6 @@
  justify-content: center;
  
 
-}
-@media screen and (max-width: 550px){
-  .renders {flex-direction: column;}
-  #three {display: none;}
-  .header-desktop {display: none;}
-  .header-mobile {display:contents}
 }
 
 h1 {
@@ -212,21 +208,20 @@ p {
 
 .frame-2 {
   align-items: center;
+  justify-content: center;
   align-self: stretch;
   border-radius: 0.75rem;
   background: #328478;
   display: flex;
+  flex-direction: column;
   width: 15rem;
   height: 15rem;
-  gap: 5rem;
-  justify-content: center;
   padding: 6px 10px;
 
 }
 
 .text-wrapper-2 {
   color: #FFFF;
-  flex: 1;
   font-family: "Poppins", Helvetica;
   font-size: 20px;
   font-weight: 400;
@@ -241,14 +236,16 @@ p {
   text-align: center;
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   font-family: "Poppins", Helvetica;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 700;
+  flex-wrap: wrap;
+
 
 }
 
 h3 {
   font-family: "Poppins";
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #FFF;
 }
 
@@ -329,6 +326,7 @@ label {
   font-weight: 700;
   text-align: center;
 }
+
 .text2 {
   color: 'black';
   font-size: 1.5rem; 
@@ -355,4 +353,42 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  gap: 2rem;
+  margin-top: 5rem;
+
+}
+
+.phone, .email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact p {
+  color:white;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.icon {
+  color: white;
+  height: 2rem;
+  width: 2rem;
+}
+
+@media screen and (max-width: 550px){
+  .renders {flex-direction: column;}
+  #three {display: none;}
+  .header-desktop {display: none;}
+  .header-mobile {display: contents}
+  .text2 { text-align: left; }
+  .h3 { text-align: left; }
+  .contact {flex-direction: column;}
 }

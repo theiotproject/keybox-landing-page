@@ -7,6 +7,15 @@ import Keybox2 from "./assets/keybox2.png";
 import Keybox1 from "./assets/keybox1.png";
 import Logo from "./assets/keybox.png";
 import { Squeeze as Hamburger } from "hamburger-react";
+import { MdOutlineEmail } from "react-icons/md";
+import { BiPhoneCall } from "react-icons/bi";
+import {
+  BsKey,
+  BsShieldCheck,
+  BsCameraVideo,
+  BsEmojiSmile,
+  BsGear,
+} from "react-icons/bs";
 
 function App() {
   const [open, setOpen] = React.useState(false);
@@ -97,24 +106,29 @@ function App() {
         <div className="h2">dlaczego KeyBox System?</div>
         <div className="teksty">
           <div className="frame-2">
+            <BsShieldCheck color="white" fontSize="2rem" />
             <p className="text-wrapper-2">
               ważne klucze zawsze w jednym miejscu
             </p>
           </div>
           <div className="frame-2">
+            <BsKey color="white" fontSize="2.5rem" />
             <div className="text-wrapper-2">proste zarządzanie dostępem</div>
           </div>
           <div className="frame-2">
+            <BsCameraVideo color="white" fontSize="2rem" />
             <p className="text-wrapper-2">
               monitorowanie pobierań kluczy w czasie rzeczywistym
             </p>
           </div>
           <div className="frame-2">
+            <BsEmojiSmile color="white" fontSize="2rem" />
             <p className="text-wrapper-2">
               przyjazna dla użytkownika aplikacja mobilna oraz internetowa
             </p>
           </div>
           <div className="frame-2">
+            <BsGear color="white" fontSize="2rem" />
             <p className="text-wrapper-2">
               pełne wsparcie ekspertów <br />
               na każdym etapie
@@ -125,7 +139,7 @@ function App() {
       <div className="three" ref={three}>
         <div className="KeyboxSystem">
           <span className="h3">
-            KeyBox System
+            Key Box System
             <br />
           </span>
           <span className="text2">
@@ -137,23 +151,21 @@ function App() {
         </div>
       </div>
       <div className="four" ref={four}>
-        <form className="formularz-kontaktowy">
-          <h3>FORMULARZ KONTAKTOWY</h3>
-          <label htmlFor="e-mail">e-mail</label>
-          <input
-            name="e-mail"
-            type="text"
-            placeholder="jkowalski@gmail.com"
-            label="E-mail"
-          />
-          <label htmlFor="message">wiadomość</label>
-          <textarea name="message" placeholder="Napisz coś.."></textarea>
-          <div className="submit">
-            <button className="button" type="submit">
-              wyślij
-            </button>
+        <div className="KeyboxSystem">
+          <span className="h2">chętnie z Tobą porozmawiamy!</span>
+          <div className="contact">
+            <div className="email">
+              <MdOutlineEmail color="white" fontSize="3rem" />
+              <h3>napisz do nas</h3>
+              <p>a.kocaj@theiotproject.com</p>
+            </div>
+            <div className="phone">
+              <BiPhoneCall color="white" fontSize="3rem" />
+              <h3>zadzwoń do nas</h3>
+              <p>+48 500 618 881</p>
+            </div>
           </div>
-        </form>
+        </div>
       </div>
 
       <div className="footer">
