@@ -27,18 +27,22 @@ function App() {
 
   const goOne = () => {
     one.current?.scrollIntoView({ behavior: "smooth" });
+    setOpen(false);
   };
 
   const goTwo = () => {
     two.current?.scrollIntoView({ behavior: "smooth" });
+    setOpen(false);
   };
 
   const goThree = () => {
     three.current?.scrollIntoView({ behavior: "smooth" });
+    setOpen(false);
   };
 
   const goFour = () => {
     four.current?.scrollIntoView({ behavior: "smooth" });
+    setOpen(false);
   };
 
   return (

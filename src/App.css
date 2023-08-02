@@ -99,12 +99,10 @@
   justify-content: center;
   height: 70%;
   padding: 10%;
-  width: 90%;
-
 }
 
 .four {
-  align-items: center;
+  align-content: center;
   background-color: #323232;
   display: flex;
   flex-direction: column;
@@ -342,17 +340,13 @@ table {
   width: 100%;
   position: absolute;
   top:120px;
-  background-color: #c1c1c1;
+  background-color: #F6F6F6;
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid #d9d6d6;
   text-align: center;
   padding: 20px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
 }
 
 .contact{
