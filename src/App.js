@@ -15,6 +15,12 @@ import {
   BsCameraVideo,
   BsEmojiSmile,
   BsGear,
+  BsDiscord,
+  BsFacebook,
+  BsInstagram,
+  BsLinkedin,
+  BsTiktok,
+  BsGithub,
 } from "react-icons/bs";
 
 function App() {
@@ -57,6 +63,7 @@ function App() {
             color="rgb(58, 155, 141)"
           />
         </header>
+
         {open && (
           <div>
             <table>
@@ -173,7 +180,50 @@ function App() {
       </div>
 
       <div className="footer">
-        <div className="icons"></div>
+        <div className="icons">
+          <a
+            href="https://discord.gg/ZGCCmEsH"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <BsDiscord className="icon" />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100084064302556"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <BsFacebook className="icon" />
+          </a>
+          <a
+            href="https://www.instagram.com/theiotproject/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <BsInstagram className="icon" />
+          </a>
+          <a
+            href="https://www.tiktok.com/@theiotproject"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <BsTiktok className="icon" />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/theiotproject"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <BsLinkedin className="icon" />
+          </a>
+          <a
+            href="https://github.com/theiotproject"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <BsGithub className="icon" />
+          </a>
+        </div>
         Copyright © 2023 KeyBox System <br />| Powered by TheIoTProject
       </div>
     </div>

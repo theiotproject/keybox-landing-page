@@ -9,8 +9,6 @@
 
 .header-mobile {display: none;}
 
-.header-desktop {position: flex;}
-
 .header {
   align-items: center;
   background-color: transparent;
@@ -29,7 +27,9 @@
   font-weight: 500;
   text-align: center;
   margin: 1rem;
-  border: none;
+  padding: 1rem;
+  border: #F6F6F6;
+  border-bottom: 3px solid #F6F6F6;
   background-color: transparent;
 }
 .nav-button:hover {
@@ -40,7 +40,8 @@
   font-weight: 500;
   text-align: center;
   margin: 1rem;
-  border: none;
+  border-bottom: 3px solid #3A9B8D;
+  padding: 1rem;
   background-color: #efefef;
   border-radius: 10;
 }
@@ -145,7 +146,6 @@ p {
 
 .button {
   background: linear-gradient(335deg, #EDD500 0%, #FE8900 100%);
-  box-shadow: -3px 4px 7px 0px rgba(0, 0, 0, 0.20);
   border-radius: 4px;
   color: #000000;
   font-family: "Poppins", Helvetica;
@@ -161,6 +161,10 @@ p {
 }
 
 .button:hover {
+  box-shadow: -3px 4px 7px 0px rgba(0, 0, 0, 0.10);
+}
+
+.button:active {
   background: linear-gradient(335deg, #ffb300 0%, rgb(255, 68, 0) 100%);
   box-shadow: -3px 4px 7px 0px rgba(0, 0, 0, 0.20);
   border-radius: 4px;
@@ -271,11 +275,13 @@ h3 {
 
 .footer {
   align-items: center;
+  align-content: center;
+  justify-content: center;
   flex-direction: column;
   background-color: #1F1F1F;
   gap: 10px;
   left: 37px;
-  bottom:0;
+  bottom: 0;
   color: #FFF;
   font-family: "Poppins";
   text-align: center;
@@ -349,6 +355,10 @@ td, th {
   padding: 20px;
 }
 
+td:hover {
+  background-color: #e9e8e8;
+}
+
 .contact{
   display: flex;
   flex-direction: row;
@@ -372,12 +382,27 @@ td, th {
 }
 
 .icon {
+  font-size: 2rem;
   color: white;
-  height: 2rem;
-  width: 2rem;
+  padding: 0rem 1rem
 }
 
-@media screen and (max-width: 550px){
+.icon:hover {
+  color: rgb(58, 155, 141);
+}
+
+.icon:action {
+  color: rgb(58, 155, 141);
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 750px){
   .renders {flex-direction: column;}
   #three {display: none;}
   .header-desktop {display: none;}
