@@ -9,6 +9,8 @@
 
 .header-mobile {display: none;}
 
+h1.mobile {display: none;}
+
 .header {
   align-items: center;
   background-color: transparent;
@@ -17,6 +19,15 @@
   left: 0;
   padding: 19px 36px 19px 20px;
   position:inherit;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
 
 .nav-button {
@@ -48,10 +59,10 @@
 
 
 .logo {
-  height: 77px;
-  object-fit: cover;
+  height: 50px;
   position: relative;
-  width: 77px;
+  width: 50px;
+  top: 0.5rem;
 }
 
 .icon-menu {
@@ -64,7 +75,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 2rem 0;
   height: 90%;
 }
@@ -95,11 +106,21 @@
 
 .KeyboxSystem {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 70%;
-  padding: 10%;
+  padding:10% ;
+}
+
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 70%;
+  padding: 10% ;
+  flex:1;
 }
 
 .four {
@@ -115,8 +136,8 @@
 
 .render {
   margin: 1rem;
-  max-width: 100%;
-  height: auto;
+  height: 20rem;
+  width: auto;
 }
 
 .renders {
@@ -125,13 +146,15 @@
 }
 
 h1 {
-  color: #3A9B8D;
+  background: linear-gradient(180deg, #00D5C7 0%, #312C48 95.83%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
   text-align: center;
-  text-shadow: -1px 2px 4px 0px rgba(0, 0, 0, 0.25);
   font-family: Poppins;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 0;
+  margin: 1rem;
 }
 
 p {
@@ -139,7 +162,7 @@ p {
   margin-top: 0;
   font-family: "Poppins", Helvetica;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   margin: 1rem;
 }
@@ -239,10 +262,27 @@ p {
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   font-family: "Poppins", Helvetica;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 500;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
 
-
+.opis {
+  color: #FE8900;
+text-align: center;
+font-family: Poppins;
+font-size: 5rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display: flex;
+transform: rotate(90deg);
+flex-direction: column;
+justify-content: center;
+align-content: center;
+width: 30%;
+height: max-content;
+flex-wrap: wrap;
 }
 
 h3 {
@@ -335,9 +375,9 @@ label {
   color: 'black';
   font-size: 1.5rem; 
   font-family: 'Poppins'; 
-  font-weight: '700'; 
+  font-weight: 600; 
   word-wrap: 'break-word';
-  text-align: center;
+  text-align: left;
 }
 
 table {
@@ -391,11 +431,6 @@ td:hover {
   color: rgb(58, 155, 141);
 }
 
-.icon:action {
-  color: rgb(58, 155, 141);
-  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
 .icons {
   display: flex;
   justify-content: center;
@@ -410,4 +445,15 @@ td:hover {
   .text2 { text-align: left; }
   .h3 { text-align: left; width: 100%; }
   .contact {flex-direction: column;}
+}
+
+@media screen and (max-width: 1000px){
+  h1 {display: none;}
+  h1.mobile {display: flex;}
+  .logo {top:0;}
+  .opis {display: none;}
+}
+
+@media screen and (max-width: 1200px){
+  #three {display: none;}
 }

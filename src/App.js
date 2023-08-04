@@ -9,6 +9,7 @@ import Logo from "./assets/keybox.png";
 import { Squeeze as Hamburger } from "hamburger-react";
 import { MdOutlineEmail } from "react-icons/md";
 import { BiPhoneCall } from "react-icons/bi";
+import { FaArrowAltCircleUp } from "react-icons/fa";
 import {
   BsKey,
   BsShieldCheck,
@@ -85,7 +86,10 @@ function App() {
       </div>
       <div className="header-desktop">
         <header className="header">
-          <img className="logo" alt="Keybox" src={Logo} />
+          <div className="header-logo">
+            <img className="logo" alt="Keybox" src={Logo} />
+            <h1>KeyBox System</h1>
+          </div>
           <div className="navbar">
             <button onClick={goTwo} className="nav-button">
               Dlaczego KeyBox System?
@@ -99,6 +103,7 @@ function App() {
           </div>
         </header>
       </div>
+
       <div className="one" ref={one}>
         <div className="renders">
           <img className="render" alt="Keybox" src={Keybox2} />
@@ -106,7 +111,7 @@ function App() {
           <img className="render" alt="Keybox" src={Keybox1} />
         </div>
         <div className="main-text">
-          <h1>KeyBox System</h1>
+          <h1 className="mobile">KeyBox System</h1>
           <p>zarządzanie kluczami jeszcze nigdy nie było tak łatwe!</p>
           <button onClick={goFour} className="button">
             NAPISZ DO NAS!
@@ -149,21 +154,36 @@ function App() {
       </div>
       <div className="three" ref={three}>
         <div className="KeyboxSystem">
-          <span className="h3">
-            Key Box System
-            <br />
-          </span>
           <span className="text2">
-            to innowacyjne rozwiązanie stworzone specjalnie po to, by ułatwić Ci
-            życie. Już nie musisz martwić się, gdzie zostały schowane ważne
-            klucze lub kto je zabrał. Nasza inteligentna skrzynka zapewnia
-            doskonałe zarządzanie kluczami!
+            Nasz produkt jest zaawansowanym rozwiązaniem do zarządzania kluczami
+            oraz dostępem do różnych pomieszczeń lub pojazdów.
+            <br />
+            <br />
+            Składa się z dwóch głównych komponentów: centrali głównej KeyBox
+            oraz modułowych pojemników na klucze - Key Slotów. <br />
+            <br />
+            Dzięki funkcji skanowania kart RFID, który umieściliśmy w centrali
+            KeyBoxa użytkownicy mogą cieszyć się wygodnym i efektywnym sposobem
+            zarządzania dostępem do kluczy i zasobów. <br />
+            <br />
+            Zarządzanie systemem jest możliwe za pomocą dedykowanej aplikacji
+            mobilnej na smartfony lub aplikacji internetowej.
           </span>
+          <div className="opis">Opis produktu</div>
         </div>
       </div>
       <div className="four" ref={four}>
-        <div className="KeyboxSystem">
-          <span className="h2">chętnie z Tobą porozmawiamy!</span>
+        <div className="kontakt">
+          <span className="h2">
+            <b>KeyBox System</b> to innowacyjne rozwiązanie tworzone przez
+            kilkuosobowy zespół młodych ludzi pasjonujących się IoT. <br />
+            <br /> Jesteśmy na etapie tworzenia pierwszych prototypów, oraz
+            intensywnej współpracy z beta testerami. <br />
+            <br />
+            Jesteśmy otwarci na współpracę, dlatego jeśli chciałbyś przetestować
+            nasz produkt lub zgłosić jakiekolwiek uwagi, skontaktuj się z nami -
+            chętnie z Tobą porozmawiamy!
+          </span>
           <div className="contact">
             <div className="email">
               <MdOutlineEmail color="white" fontSize="3rem" />
